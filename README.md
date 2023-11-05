@@ -32,6 +32,7 @@ In my Jenkins manager, I configured two agents. One agent was used for the Terra
 After confirming the success of my pipeline, I checked my infrastructure and application on AWS. Everything specified in the Terraform `main.tf` file was built upon success.
 
 <img width="700" alt="Screenshot 2023-11-04 at 10 23 35 PM" src="https://github.com/Jmo-101/Containerized_Bankapp/assets/138607757/e25a79d5-37ba-4d81-bd02-5e423765377e">
+<img width="500" alt="Screenshot 2023-11-04 at 10 24 19 PM" src="https://github.com/Jmo-101/Containerized_Bankapp/assets/138607757/f6c2d755-696c-4efc-8627-7790646fa0a8">
 
 ## Security & Containers
 
