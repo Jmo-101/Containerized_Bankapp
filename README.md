@@ -3,6 +3,11 @@
 </p>
 <h1 align="center">Containerized_Bankapp<h1> 
 
+## Planning
+
+<img width="500" alt="Screenshot 2023-11-05 at 10 39 37 AM" src="https://github.com/Jmo-101/Containerized_Bankapp/assets/138607757/da9eaa63-057d-4628-95f0-395b7f404ed9">
+
+
 # Purpose
 
 This project demonstrates the utilization of Terraform and Docker, along with Jenkins, to provision a CI/CD pipeline with Jenkins agents. Terraform is used to automate the creation of Elastic Container Services using a Docker image.
