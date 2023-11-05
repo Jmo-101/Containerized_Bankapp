@@ -29,8 +29,8 @@ resource "aws_ecs_task_definition" "aws-ecs-task" {
   container_definitions = <<EOF
   [
   {
-      "name": "url-container",
-      "image": "tsanderson77/bankapp11:latest",
+      "name": "d7-bank-container",
+      "image": "jmo10/bankapp6:latest",
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
@@ -41,7 +41,7 @@ resource "aws_ecs_task_definition" "aws-ecs-task" {
       },
       "portMappings": [
         {
-          "containerPort": 5000
+          "containerPort": 8000
         }
       ]
     }
