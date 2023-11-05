@@ -64,3 +64,4 @@ resource "aws_ecs_service" "aws-ecs-service" {
 ```
 
 ## Troubleshooting
+Some issues I ran into while doing this deployment were mostly related to naming in the `main.tf` file. When running a jenkins pipeline an error occured where my container names weren't named the same. Another issue I ran into was in the `Jenkinsfile` during the `build`, `test` and `push` stages. The error I encountered was permission issues, to solve this issue I edited the `Jenkinsfile` and added sudo commands to these stages to grant it root permissions. 
