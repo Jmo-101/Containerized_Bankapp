@@ -14,7 +14,7 @@ This project demonstrates the utilization of Terraform and Docker, along with Je
 
 ## Docker
 
-I started by using an existing EC2 instance with Docker installed to create a Docker image based on a past deployment of a retail banking application. Details of this deployment can be found [here](link_to_details). After creating a Dockerfile and building the image using `docker build`, I renamed the image with the `docker tag` command and uploaded it to my DockerHub account using `docker push`.
+I started by using an existing EC2 instance with Docker installed to create a Docker image based on a past deployment of a retail banking application. Details of this deployment can be found [here](https://github.com/Jmo-101/automate_tf_bankapp.git). After creating a Dockerfile and building the image using `docker build`, I renamed the image with the `docker tag` command and uploaded it to my DockerHub account using `docker push`.
 
 <img width="518" alt="Screenshot 2023-11-04 at 5 58 23 PM" src="https://github.com/Jmo-101/Containerized_Bankapp/assets/138607757/241266f0-492f-42ac-a9aa-87f21ee89d43">
 
