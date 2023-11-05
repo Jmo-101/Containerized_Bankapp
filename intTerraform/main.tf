@@ -9,7 +9,7 @@ provider "aws" {
 resource "aws_ecs_cluster" "aws-ecs-cluster" {
   name = "urlapp-cluster"
   tags = {
-    Name = "url-ecs"
+    Name = "Banking-ecs"
   }
 }
 
@@ -24,7 +24,7 @@ resource "aws_cloudwatch_log_group" "log-group" {
 # Task Definition
 
 resource "aws_ecs_task_definition" "aws-ecs-task" {
-  family = "url-task"
+  family = "banking-task"
 
   container_definitions = <<EOF
   [
