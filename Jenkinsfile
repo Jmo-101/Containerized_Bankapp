@@ -28,7 +28,7 @@ pipeline {
      
     stage ('Build') {
       steps {
-          sh 'docker build -t tsanderson77/bankapp11 .'
+          sh 'docker build -t jmo10/bankapp6 .'
     }
 }
      stage ('Login') {
@@ -39,7 +39,7 @@ pipeline {
 
      stage ('Push') {
         steps {
-            sh 'docker push tsanderson77/bankapp11'
+            sh 'docker push jmo10/bankapp6'
   }
      }
 
