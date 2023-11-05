@@ -7,7 +7,7 @@ provider "aws" {
 
 # Cluster
 resource "aws_ecs_cluster" "aws-ecs-cluster" {
-  name = "urlapp-cluster"
+  name = "banking-cluster"
   tags = {
     Name = "Banking-ecs"
   }
