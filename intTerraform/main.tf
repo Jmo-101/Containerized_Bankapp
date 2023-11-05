@@ -59,7 +59,7 @@ resource "aws_ecs_task_definition" "aws-ecs-task" {
 
 # ECS Service
 resource "aws_ecs_service" "aws-ecs-service" {
-  name                 = "url-ecs-service"
+  name                 = "bank-ecs-service"
   cluster              = aws_ecs_cluster.aws-ecs-cluster.id
   task_definition      = aws_ecs_task_definition.aws-ecs-task.arn
   launch_type          = "FARGATE"
@@ -78,8 +78,8 @@ resource "aws_ecs_service" "aws-ecs-service" {
 
   load_balancer {
     target_group_arn = aws_lb_target_group.bank-app.arn
-    container_name   = "url-container"
-    container_port   = 5000
+    container_name   = "d7banking-container"
+    container_port   = 8000
   }
 
 }
