@@ -28,7 +28,7 @@ pipeline {
      
     stage ('Build') {
       steps {
-          sh 'docker build -t jmo10/bankapp6 '
+          sh 'docker build -t jmo10/bankapp6 .'
     }
 }
      stage ('Login') {
