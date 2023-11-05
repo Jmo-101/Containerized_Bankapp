@@ -45,3 +45,5 @@ After confirming the success of my pipeline, I checked my infrastructure and app
 ## Security & Containers
 
 Upon observation, the infrastructure is not secure due to the Jenkins manager being housed in a default VPC and public subnet. If the Jenkins manager is compromised or fails, the entire application goes down. However, the containers are secure as they are placed in a private subnet. I configured a desired count of two tasks for my banking cluster in the `main.tf` file. If a task is terminated, another task will spin back up, ensuring the desired count of two for the cluster.
+
+## Troubleshooting
