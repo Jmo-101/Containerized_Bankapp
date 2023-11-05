@@ -31,6 +31,8 @@ In my Jenkins manager, I configured two agents. One agent was used for the Terra
 
 After confirming the success of my pipeline, I checked my infrastructure and application on AWS. Everything specified in the Terraform `main.tf` file was built upon success.
 
+<img width="700" alt="Screenshot 2023-11-04 at 10 23 35 PM" src="https://github.com/Jmo-101/Containerized_Bankapp/assets/138607757/e25a79d5-37ba-4d81-bd02-5e423765377e">
+
 ## Security & Containers
 
 Upon observation, the infrastructure is not secure due to the Jenkins manager being housed in a default VPC and public subnet. If the Jenkins manager is compromised or fails, the entire application goes down. However, the containers are secure as they are placed in a private subnet. I configured a desired count of two tasks for my banking cluster in the `main.tf` file. If a task is terminated, another task will spin back up, ensuring the desired count of two for the cluster.
